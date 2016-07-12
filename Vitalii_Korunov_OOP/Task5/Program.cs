@@ -107,7 +107,7 @@ namespace Task5
         /// <param name="y">координата y</param>
         private static void CreateLine(int x,int y)
         {
-            Line line = new Line(x, y);
+            Line line = new Line(x, y, 0, 0);
             _drawObjects.Add(line);
             Console.WriteLine("Линия с координатам ({0},{1}) создана.", line.X, line.Y);
         }

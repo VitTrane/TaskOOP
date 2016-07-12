@@ -40,7 +40,11 @@ namespace Task3
         public DateTime DateBirth
         {
             get { return _dateBirth; }
-            set { _dateBirth = value; }
+            set 
+            {
+                CalculateAge(_dateBirth);
+                _dateBirth = value; 
+            }
         }
 
         public User(string secondName, string name, string patronymic, DateTime dateBirth)
