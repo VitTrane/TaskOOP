@@ -42,7 +42,7 @@ namespace Task3
             get { return _dateBirth; }
             set 
             {
-                CalculateAge(_dateBirth);
+                CalculateAge(value);
                 _dateBirth = value; 
             }
         }
